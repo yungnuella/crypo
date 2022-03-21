@@ -1,7 +1,7 @@
-import React from 'react';
-import { Tab, Row, Col, Nav } from 'react-bootstrap';
-import { ThemeConsumer } from '../context/ThemeContext';
-import Layout from '../components/Layout';
+import React from "react";
+import { Tab, Row, Col, Nav } from "react-bootstrap";
+import { ThemeConsumer } from "../context/ThemeContext";
+import Layout from "../components/Layout";
 export default function wallet() {
   return (
     <Layout>
@@ -30,7 +30,7 @@ export default function wallet() {
                         <h5 className="card-title">General Information</h5>
                         <div className="settings-profile">
                           <form>
-                            <img src={'img/avatar.svg'} alt="avatar" />
+                            <img src={"img/avatar.svg"} alt="avatar" />
                             <div className="custom-file">
                               <input
                                 type="file"
@@ -255,7 +255,7 @@ export default function wallet() {
                                 className="d-flex justify-content-between align-items-center active"
                               >
                                 <div className="d-flex">
-                                  <img src={'img/icon/18.png'} alt="btc" />
+                                  <img src={"img/icon/18.png"} alt="btc" />
                                   <div>
                                     <h2>BTC</h2>
                                     <p>Bitcoin</p>
@@ -264,7 +264,7 @@ export default function wallet() {
                                 <div>
                                   <h3>4.5484254</h3>
                                   <p className="text-right">
-                                    <i className="icon ion-md-lock"></i>{' '}
+                                    <i className="icon ion-md-lock"></i>{" "}
                                     0.0000000
                                   </p>
                                 </div>
@@ -276,7 +276,7 @@ export default function wallet() {
                                 className="d-flex justify-content-between align-items-center"
                               >
                                 <div className="d-flex">
-                                  <img src={'img/icon/1.png'} alt="btc" />
+                                  <img src={"img/icon/1.png"} alt="btc" />
                                   <div>
                                     <h2>ETH</h2>
                                     <p>Ethereum</p>
@@ -285,7 +285,7 @@ export default function wallet() {
                                 <div>
                                   <h3>13.454845</h3>
                                   <p className="text-right">
-                                    <i className="icon ion-md-lock"></i>{' '}
+                                    <i className="icon ion-md-lock"></i>{" "}
                                     0.0000000
                                   </p>
                                 </div>
@@ -297,7 +297,7 @@ export default function wallet() {
                                 className="d-flex justify-content-between align-items-center"
                               >
                                 <div className="d-flex">
-                                  <img src={'img/icon/9.png'} alt="btc" />
+                                  <img src={"img/icon/9.png"} alt="btc" />
                                   <div>
                                     <h2>BNB</h2>
                                     <p>Binance</p>
@@ -306,7 +306,7 @@ export default function wallet() {
                                 <div>
                                   <h3>35.4842458</h3>
                                   <p className="text-right">
-                                    <i className="icon ion-md-lock"></i>{' '}
+                                    <i className="icon ion-md-lock"></i>{" "}
                                     0.0000000
                                   </p>
                                 </div>
@@ -318,7 +318,7 @@ export default function wallet() {
                                 className="d-flex justify-content-between align-items-center"
                               >
                                 <div className="d-flex">
-                                  <img src={'img/icon/6.png'} alt="btc" />
+                                  <img src={"img/icon/6.png"} alt="btc" />
                                   <div>
                                     <h2>TRX</h2>
                                     <p>Tron</p>
@@ -327,7 +327,7 @@ export default function wallet() {
                                 <div>
                                   <h3>4.458941</h3>
                                   <p className="text-right">
-                                    <i className="icon ion-md-lock"></i>{' '}
+                                    <i className="icon ion-md-lock"></i>{" "}
                                     0.0000000
                                   </p>
                                 </div>
@@ -339,7 +339,7 @@ export default function wallet() {
                                 className="d-flex justify-content-between align-items-center"
                               >
                                 <div className="d-flex">
-                                  <img src={'img/icon/2.png'} alt="btc" />
+                                  <img src={"img/icon/2.png"} alt="btc" />
                                   <div>
                                     <h2>EOS</h2>
                                     <p>Eosio</p>
@@ -348,7 +348,7 @@ export default function wallet() {
                                 <div>
                                   <h3>33.478951</h3>
                                   <p className="text-right">
-                                    <i className="icon ion-md-lock"></i>{' '}
+                                    <i className="icon ion-md-lock"></i>{" "}
                                     0.0000000
                                   </p>
                                 </div>
@@ -360,7 +360,7 @@ export default function wallet() {
                                 className="d-flex justify-content-between align-items-center"
                               >
                                 <div className="d-flex">
-                                  <img src={'img/icon/7.png'} alt="btc" />
+                                  <img src={"img/icon/7.png"} alt="btc" />
                                   <div>
                                     <h2>XMR</h2>
                                     <p>Monero</p>
@@ -369,7 +369,7 @@ export default function wallet() {
                                 <div>
                                   <h3>99.465975</h3>
                                   <p className="text-right">
-                                    <i className="icon ion-md-lock"></i>{' '}
+                                    <i className="icon ion-md-lock"></i>{" "}
                                     0.0000000
                                   </p>
                                 </div>
@@ -381,7 +381,7 @@ export default function wallet() {
                                 className="d-flex justify-content-between align-items-center"
                               >
                                 <div className="d-flex">
-                                  <img src={'img/icon/4.png'} alt="btc" />
+                                  <img src={"img/icon/4.png"} alt="btc" />
                                   <div>
                                     <h2>LWC</h2>
                                     <p>LineworkCoin</p>
@@ -390,7 +390,7 @@ export default function wallet() {
                                 <div>
                                   <h3>114.57564</h3>
                                   <p className="text-right">
-                                    <i className="icon ion-md-lock"></i>{' '}
+                                    <i className="icon ion-md-lock"></i>{" "}
                                     44.907,92 USD
                                   </p>
                                 </div>
@@ -451,7 +451,7 @@ export default function wallet() {
                                         <input
                                           type="text"
                                           className="form-control"
-                                          value="Ad87deD4gEe8dG57Ede4eEg5dREs4d5e8f4e"
+                                          value="1PD6inNykQuJ1Vp6GaH2NAxcX766RbgNRC"
                                         />
                                         <div className="input-group-prepend">
                                           <button className="btn btn-primary">
@@ -463,14 +463,14 @@ export default function wallet() {
                                     <div className="col-md-4">
                                       <ThemeConsumer>
                                         {({ data }) => {
-                                          return data.theme === 'light' ? (
+                                          return data.theme === "light" ? (
                                             <img
-                                              src={'img/qr-code-dark.svg'}
+                                              src={"img/qr-code.jpeg"}
                                               alt="qr-code"
                                             />
                                           ) : (
                                             <img
-                                              src={'img/qr-code-light.svg'}
+                                              src={"img/qr-code.jpeg"}
                                               alt="qr-code"
                                             />
                                           );
@@ -631,7 +631,7 @@ export default function wallet() {
                               <div className="notification-info">
                                 <p>Phone Notify</p>
                                 <span>
-                                  Get transition notification in your phone{' '}
+                                  Get transition notification in your phone{" "}
                                 </span>
                               </div>
                               <div className="custom-control custom-switch">
@@ -699,7 +699,9 @@ export default function wallet() {
                             <tbody>
                               <tr>
                                 <td>1</td>
-                                <td>zRmWVcrAZ1C0RZkFMu7K5v0KWC9jUJLt</td>
+                                <td>
+                                  bc1q9aa756jjheg334xq8qcx5q67spe7as9u08z9wz
+                                </td>
                                 <td>
                                   <div className="custom-control custom-switch">
                                     <input
@@ -720,7 +722,7 @@ export default function wallet() {
                               </tr>
                               <tr>
                                 <td>2</td>
-                                <td>Rv5dgnKdmVPyHwxeExBYz8uFwYQz3Jvg</td>
+                                <td>1PD6inNykQuJ1Vp6GaH2NAxcX766RbgNRC</td>
                                 <td>
                                   <div className="custom-control custom-switch">
                                     <input
@@ -740,7 +742,7 @@ export default function wallet() {
                               </tr>
                               <tr>
                                 <td>3</td>
-                                <td>VxEYIs1HwgmtKTUMA4aknjSEjjePZIWu</td>
+                                <td>updating</td>
                                 <td>
                                   <div className="custom-control custom-switch">
                                     <input
@@ -760,7 +762,7 @@ export default function wallet() {
                               </tr>
                               <tr>
                                 <td>4</td>
-                                <td>M01DueJ4x3awI1SSLGT3CP1EeLSnqt8o</td>
+                                <td>updating</td>
                                 <td>
                                   <div className="custom-control custom-switch">
                                     <input

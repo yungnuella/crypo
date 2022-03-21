@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import { Navbar, Nav, NavDropdown, Dropdown, Button } from 'react-bootstrap';
-import { ThemeConsumer } from '../context/ThemeContext';
+import React, { Component } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import { Navbar, Nav, NavDropdown, Dropdown, Button } from "react-bootstrap";
+import { ThemeConsumer } from "../context/ThemeContext";
 export default class Header extends Component {
   componentDidMount() {
-    let el = document.querySelector('#darkTheme');
+    let el = document.querySelector("#darkTheme");
     if (el) {
-      el.addEventListener('click', function () {
-        document.body.classList.toggle('dark');
+      el.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
       });
     }
   }
@@ -16,11 +16,8 @@ export default class Header extends Component {
     return (
       <>
         <Head>
-          <title>Crypo</title>
-          <meta
-            name="description"
-            content="Cryptocurrency Exchange"
-          />
+          <title>Bitcyclin.com</title>
+          <meta name="description" content="Cryptocurrency Exchange" />
           <link rel="icon" href="/favicon.png" />
         </Head>
         <header className="light-bb">
@@ -29,10 +26,10 @@ export default class Header extends Component {
               <a className="navbar-brand">
                 <ThemeConsumer>
                   {({ data }) => {
-                    return data.theme === 'light' ? (
-                      <img src={'/img/logo-dark.svg'} alt="logo" />
+                    return data.theme === "light" ? (
+                      <img src={"/img/logo-transparent.png"} alt="logo" />
                     ) : (
-                      <img src={'/img/logo-light.svg'} alt="logo" />
+                      <img src={"/img/logo-transparent.png"} alt="logo" />
                     );
                   }}
                 </ThemeConsumer>
@@ -57,14 +54,6 @@ export default class Header extends Component {
                   <Link href="/settings">
                     <a className="dropdown-item">Settings</a>
                   </Link>
-                </NavDropdown>
-                <NavDropdown title="Others">
-                  <Link href="/login">
-                    <a className="dropdown-item">Login</a>
-                  </Link>
-                  <Link href="/signup">
-                    <a className="dropdown-item">Sign up</a>
-                  </Link>
                   <Link href="/lock">
                     <a className="dropdown-item">Lock</a>
                   </Link>
@@ -81,13 +70,21 @@ export default class Header extends Component {
                     <a className="dropdown-item">404</a>
                   </Link>
                 </NavDropdown>
+                <NavDropdown title="Get Started">
+                  <Link href="login">
+                    <a className="dropdown-item">Login</a>
+                  </Link>
+                  <Link href="/signup">
+                    <a className="dropdown-item">Sign up</a>
+                  </Link>
+                </NavDropdown>
               </Nav>
               <Nav className="navbar-nav ml-auto">
                 <Dropdown className="header-custom-icon">
                   <ThemeConsumer>
                     {({ data, update }) => (
                       <Button variant="default" onClick={update} id="darkTheme">
-                        {data.theme === 'light' ? (
+                        {data.theme === "light" ? (
                           <i className="icon ion-md-moon"></i>
                         ) : (
                           <i className="icon ion-md-sunny"></i>
@@ -174,16 +171,17 @@ export default class Header extends Component {
                 </Dropdown>
                 <Dropdown className="header-img-icon">
                   <Dropdown.Toggle variant="default">
-                    <img src={'img/avatar.svg'} alt="avatar" />
+                    <img src={"img/avatar.svg"} alt="avatar" />
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <div className="dropdown-header d-flex flex-column align-items-center">
                       <div className="figure mb-3">
-                        <img src={'img/avatar.svg'} alt="" />
+                        <img src={"img/avatar.svg"} alt="" />
                       </div>
                       <div className="info text-center">
-                        <p className="name font-weight-bold mb-0">Global Account</p>
-                  
+                        <p className="name font-weight-bold mb-0">
+                          Global Account
+                        </p>
                       </div>
                     </div>
                     <div className="dropdown-body">
